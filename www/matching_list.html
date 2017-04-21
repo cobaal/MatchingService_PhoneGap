@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+        <link rel="stylesheet" type="text/css" href="css/matching_list.css" />
+        <title>MATCHING SERVICE</title>
+    </head>
+  
+    <body> 
+        <div class="app_bar_container">
+            <input class="back_button" id="back_button" type="image" src="img/back_button.png" onclick="backButtonClick()">
+            <input class="menu_button" id="menu_button" type="image" src="img/menu_button.png">
+            <input class="edit_button" id="edit_button" type="button" value="편집" onclick="editButtonClick(this)">
+            <div class="title"> 매칭 목록 </div>
+        </div>
+
+        <div class="table_subject_container">
+            <div class="table_subject_keyword"> 매칭 키워드 </div>
+            <div class="table_subject_state"> 현재 상태 </div>
+            <div class="table_subject_number"> 매칭 인원 </div>
+        </div>
+
+        <button class="floating_button" onclick="floatingButtonClick()">+</button>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/matching_list.js">
+            window.onload();
+        </script>
+
+    </body>
+</html>

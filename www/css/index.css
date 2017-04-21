@@ -1,0 +1,43 @@
+.app_bar_container {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*border: 1px solid #121212;*/
+}
+
+.back_button {
+  width: 30px; 
+  height: 30px;
+  float: left;
+  outline: none;
+  /*border: 1px solid #121212;*/
+}
+
+.title {
+  width: 150px;
+  height: 30px;
+  color: #F44949;
+  font-size: 20px;
+  text-align: center;
+  margin: 0px auto;
+  line-height: 30px;
+  /*margin-top:20px;*/
+  /*border: 1px solid #121212;*/
+}
+
+.menu_button {
+  width: 30px; 
+  height: 30px;
+  float: right;
+  outline: none;
+  /*border: 1px solid #121212;*/
+}
+
+.move {
+  clear: both;
+  width: 100px; 
+  height: 100px;
+  outline: none;
+  margin: 0px auto;
+}
