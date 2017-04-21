@@ -135,4 +135,3 @@ function startButton() {
   grade_tag += "학년";
 
   alert(keyword_input.value + " #" + gender_state + " #" + grade_tag + " #" +major_select.value + " #" + number_input.value + "명");
-}
