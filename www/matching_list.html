@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
-        <link rel="stylesheet" type="text/css" href="css/matching_list.css" />
-        <title>MATCHING SERVICE</title>
-    </head>
-  
-    <body> 
-        <div class="app_bar_container">
-            <input class="back_button" id="back_button" type="image" src="img/back_button.png" onclick="backButtonClick()">
-            <input class="menu_button" id="menu_button" type="image" src="img/menu_button.png">
-            <input class="edit_button" id="edit_button" type="button" value="편집" onclick="editButtonClick(this)">
-            <div class="title"> 매칭 목록 </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/matching_list.css" />
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/matching_list.js"></script>
+
+    <title>MATCHING SERVICE</title>
+</head>
+
+<body> 
+    <div id="navigation">
+        <div id="id_pannel">
+            <input id="user_icon" type="image" src="img/user_icon.png">
+            <input id="name_button" type="button" value=" 님">
+            <input id="logout_button" type="image" src="img/Logout_icon.png">
         </div>
+        <input id="navi_button1" type="image" src="img/navi_match_icon.png">
+        <input id="navi_button2" type="image" src="img/navi_shuttle_icon.png">
+        <input id="navi_button3" type="image" src="img/navi_market_icon.png">
+    </div>
 
-        <div class="table_subject_container">
-            <div class="table_subject_keyword"> 매칭 키워드 </div>
-            <div class="table_subject_state"> 현재 상태 </div>
-            <div class="table_subject_number"> 매칭 인원 </div>
-        </div>
+    <div id="black"></div>
 
-        <button class="floating_button" onclick="floatingButtonClick()">+</button>
+    <div class="app_bar_container">
+        <input class="back_button" id="back_button" type="image" src="img/back_button.png">
+        <input class="menu_button" id="menu_button" type="image" src="img/menu_button.png">
+        <input class="edit_button" id="edit_button" type="button" value="편집">
+        <div class="title"> 매칭 목록 </div>
+    </div>
 
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/matching_list.js">
-            window.onload();
-        </script>
+    <div class="table_subject_container">
+        <div class="table_subject_keyword"> 매칭 키워드 </div>
+        <div class="table_subject_state"> 현재 상태 </div>
+        <div class="table_subject_number"> 매칭 인원 </div>
+    </div>
 
-    </body>
+    <button class="floating_button">+</button>
+
+</body>
 </html>

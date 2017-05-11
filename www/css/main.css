@@ -1,0 +1,237 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#navigation {
+  height: 140px;
+  bottom: 30px;
+  border-bottom: 1px solid #E3E3E3; 
+  display: none;
+}
+
+#id_pannel {
+  height: 60px;
+  bottom: 30px;
+  background: #3d6b98;
+  margin-bottom: 10px;
+}
+
+#user_icon {
+  width: auto; 
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 20px;
+  background: rgba(0,0,0,0);
+  border: 0px;
+  float: left;
+  outline: none;
+  /*border: 1px solid #121212;*/
+}
+
+#name_button {
+  width: auto; 
+  margin-top: 17.5px;
+  margin-left: 10px;
+  height: 25px;
+  font-size: 15px;
+  color: #ffffff;
+  background: rgba(0,0,0,0);
+  border: 0px;
+  float: left;
+  outline: none;
+  /*border: 1px solid #121212;*/
+}
+
+#logout_button {
+  width: auto; 
+  height: 25px;
+  margin-top: 17.5px;
+  margin-right: 10px;
+  background: rgba(0,0,0,0);
+  border: 0px;
+  float: right;
+  outline: none;
+  /*border: 1px solid #121212;*/
+}
+
+#navi_button1 {
+  float: left;
+  height: 60px;
+  width: 60px;
+  margin-left: calc((100% / 3 - 60px) / 2);
+  outline: none;
+  border: none;
+  /*border: 1px solid #121212;*/
+}
+
+#navi_button2 {
+  float: left;
+  height: 60px;
+  width: 60px;
+  margin-left: calc(100% / 3 - 60px);
+  outline: none;
+  border: none;
+  /*border: 1px solid #121212;*/
+}
+
+#navi_button3 {
+  float: left;
+  height: 60px;
+  width: 60px;
+  margin-left: calc(100% / 3 - 60px);
+  outline: none;
+  border: none;
+  /*border: 1px solid #121212;*/
+}
+
+.app_bar_container {
+  width: 100%;
+  height: 50px;
+  /*border: 1px solid #121212;*/
+}
+
+.alarm_button {
+  width: 30px; 
+  height: 30px;
+  float: left;
+  outline: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  /*border: 1px solid #121212;*/
+}
+
+.menu_button {
+  width: 30px;
+  height: 30px;
+  float: right;
+  outline: none;
+  margin-top: 10px;
+  margin-right: 10px;
+  /*border: 1px solid #121212;*/
+}
+
+#logo_container {
+  height: calc(55% - 50px);
+  width: 100%;
+  /*border: 1px solid #121212;*/
+}
+
+#main_logo {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: calc(50% - 100px);
+  margin-left: calc(50% - 100px);
+  /*border: 1px solid #121212;*/
+}
+
+#matching_button {
+  position: fixed;
+  bottom: 30%;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+  width: 100%; 
+  height: 15%;
+  outline: none;
+  border: none;
+}
+
+#shuttle_button {
+  position: fixed;
+  bottom: 15%;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+  width: 100%; 
+  height: 15%;
+  outline: none;
+  border: none;
+}
+
+#market_button {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+  width: 100%; 
+  height: 15%;
+  outline: none;
+  border: none;
+}
+
+#matching_container {
+  width: 100%; 
+  height: 15%;
+  background-color: #e9565a;
+}
+
+#matching_icon {
+  position: relative;
+  top: 27.5%;
+  left: 3%;
+  height: 45%;
+}
+
+#shuttle_container {
+  width: 100%; 
+  height: 15%;
+  background-color: #2b9bb5;
+}
+
+#shuttle_icon {
+  position: relative;
+  top: 27.5%;
+  left: 3%;
+  height: 45%;
+}
+
+#market_container {
+  width: 100%; 
+  height: 15%;
+  background-color: #e4a55a;
+}
+
+#market_icon {
+  position: relative;
+  top: 27.5%;
+  left: 3%;
+  height: 45%;
+}
+
+#arrow_1 {
+  position: fixed;
+  bottom: 36%;
+  right: 3%;
+  height: 3%;
+}
+
+#arrow_2 {
+  position: fixed;
+  bottom: 21%;
+  right: 3%;
+  height: 3%;
+}
+
+#arrow_3 {
+  position: fixed;
+  bottom: 6%;
+  right: 3%;
+  height: 3%;
+}
+
+#black {
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  outline: none;
+  border: none;
+  display: none;
+  z-index: 10;
+}

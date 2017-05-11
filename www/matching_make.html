@@ -3,58 +3,48 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+
     <link rel="stylesheet" type="text/css" href="css/matching_make.css" />
+
+    <script src="cordova.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/matching_make.js"></script>
+
     <title>MATCHING SERVICE</title>
 </head>
 
 <body> 
     <div class="app_bar_container">
-        <input class="back_button" id="back_button" type="image" src="img/back_button.png" onclick="backButtonClick()">
+        <input class="back_button" id="back_button" type="image" src="img/back_button.png">
         <div class="title"> 팀원 매칭 </div>
     </div>
 
     <div class="subtitle"> 매칭 키워드 </div>
-    <input class="keyword_input" type="text" id="keyword_input" placeholder="키워드를 입력하세요">
+    <input type="text" id="keyword_input" placeholder="키워드를 입력하세요">
 
     <div class="subtitle"> 성별 </div>
     <div class="submenu_container">
-        <button id="gender_all_button" onclick="selectGenderButtonClick(this)">전체</button>
-        <button id="gender_M_button" onclick="selectGenderButtonClick(this)">남자</button>
-        <button id="gender_F_button" onclick="selectGenderButtonClick(this)">여자</button>
+        <button class="select_gender" id="gender_all_button">전체</button>
+        <button class="select_gender" id="gender_M_button">남자</button>
+        <button class="select_gender" id="gender_F_button">여자</button>
     </div>        
 
     <div class="subtitle"> 학년 </div>
     <div class="submenu_container">
-        <div class="inner_container">
-            <button class="grade_gap" id="grade_gap_1"></button>
-            <button class="grade_gap_gap"></button>
-            <button class="grade_gap" id="grade_gap_2"></button>
-            <button class="grade_gap_gap"></button>
-            <button class="grade_gap" id="grade_gap_3"></button>
-            <button class="grade_gap_gap"></button>
-            <button class="grade_gap" id="grade_gap_4"></button>
-            <button class="grade_gap_gap"></button>
-            <button class="grade_gap" id="grade_gap_5"></button>
-            <button class="grade_gap_gap"></button>
-            <button class="grade_gap" id="grade_gap_6"></button>
-        </div> 
-
-        <div class="inner_container">
-            <button class="grade" id="grade_all_button" onclick="selectGradeButtonClick(this)">전체</button>
-            <button class="grade" id="grade_1_button" onclick="selectGradeButtonClick(this)">1학년</button>
-            <button class="grade" id="grade_2_button" onclick="selectGradeButtonClick(this)">2학년</button>
-            <button class="grade" id="grade_3_button" onclick="selectGradeButtonClick(this)">3학년</button>
-            <button class="grade" id="grade_4_button" onclick="selectGradeButtonClick(this)">4학년</button>
-        </div> 
+        <button class="select_grade" id="grade_all_button">전체</button>
+        <button class="select_grade" id="grade_1_button">1학년</button>
+        <button class="select_grade" id="grade_2_button">2학년</button>
+        <button class="select_grade" id="grade_3_button">3학년</button>
+        <button class="select_grade" id="grade_4_button">4학년</button>
     </div>
 
     <div class="submenu_container_noborder">
-        <div class="subtitle"> 학과 </div> 
+        <div class="subtitle_left"> 학과 </div> 
         <div class="subtitle_right"> 인원 </div>
     </div>
 
     <div class="submenu_container_noborder">
-        <select class="major_select" id="major_select">
+        <select id="major_select">
             <option value="전체학과">전체학과</option>
             <option value="기계공학과">기계공학과</option>
             <option value="신소재공학과">신소재공학과</option>
@@ -85,15 +75,10 @@
             <option value="스포츠건강과학과">스포츠건강과학과</option>
         </select>
 
-        <input class="number_max_input" type="number" id="number_input" placeholder="인원 수">
+        <input type="number" id="number_input" placeholder="인원 수">
     </div>
 
-    <button id="startButton" onclick="startButton()">매칭시작</button>
-
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/matching_make.js">
-        window.onload();
-    </script>
+    <button id="startButton">매칭시작</button>
 
 </body>
 </html>

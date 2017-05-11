@@ -3,10 +3,7 @@ $(document).ready(function() {
 
   var name = getCookie("userInfo");
   $("#name_button").attr("value", name + " 님");
-
-  $("#back_button").click(function() {
-    history.back();
-  });
+  alert(name);
 
   $("#menu_button").click(function() {
     var submenu = $("#navigation");
@@ -21,11 +18,14 @@ $(document).ready(function() {
     if( blackPanel.is(":visible") ){
       blackPanel.fadeOut();
       $("body").unbind("touchmove");
+      visible();
       setTimeout(visible, 500);
     }else{
       blackPanel.fadeIn();
       $("body").css({overflow:"hidden"}).bind("touchmove", function(e){e.preventDefault()});
-      $(".floating_button").css("display", "none");
+      $("#arrow_1").css("display", "none");
+      $("#arrow_2").css("display", "none");
+      $("#arrow_3").css("display", "none");
     }
   })
 
@@ -46,12 +46,13 @@ $(document).ready(function() {
     }else{
       blackPanel.fadeIn();
       $("body").css({overflow:"hidden"}).bind("touchmove", function(e){e.preventDefault()});
-      $(".floating_button").css("display", "none");
     }
   })
 
   function visible() {
-    $(".floating_button").css("display", "block");
+    $("#arrow_1").css("display", "block");
+    $("#arrow_2").css("display", "block");
+    $("#arrow_3").css("display", "block");
   }
 
   $("#logout_button").click(function() {
@@ -59,20 +60,8 @@ $(document).ready(function() {
     location.href="index.html";
   });
 
-  $("#edit_button").click(function() {
-    if($(this).attr("value") == "편집") {
-      $(this).attr("value", "완료");
-      $(this).css("color", "#F44949");
-
-    } else {
-      $(this).attr("value", "편집");  
-      $(this).css("color", "#a3a3a3");
-    }
-    
-  });
-
-  $(".floating_button").click(function() {
-    location.href="matching_make.html";
+  $("#matching_button").click(function() {
+    location.href="matching_list.html";
   });
 
   function setCookie(cookieName, value, exdays){
@@ -104,47 +93,3 @@ $(document).ready(function() {
 
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// window.onload= init;
-
-// var edit_state = false;
-
-// function init() {
-// }
-
-// function backButtonClick() {
-//   history.back();
-// }
-
-// function editButtonClick(e) {
-//   var clicked_button = document.getElementById(e.id);
-
-//   if (!edit_state) {
-//     clicked_button.value = "완료";
-//     clicked_button.style.color = "#F44949";
-//     edit_state = true;
-
-//   } else {
-//     clicked_button.value = "편집";
-//     clicked_button.style.color = "#a3a3a3";
-//     edit_state = false;
-//   }
-// }
-
-// function floatingButtonClick() {
-//   location.href="matching_make.html";
-// }

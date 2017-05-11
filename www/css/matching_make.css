@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .app_bar_container {
   width: 100%;
   height: 40px;
@@ -11,7 +16,8 @@
   width: 30px; 
   height: 30px;
   float: left;
-  outline: none
+  outline: none;
+  margin-left: 10px;
   /*border: 1px solid #121212;*/
 }
 
@@ -30,32 +36,33 @@
 .subtitle {
   clear: both;
   font-size: 15px;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-bottom: 10px;
 }
 
 .subtitle_left {
-  float: left;
-  width: 70%;
+  position: absolute;
+  width: 50%;
   font-size: 15px;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-bottom: 10px;
+  /*border: 1px solid #121212;*/
 }
 
 .subtitle_right {
-  float: right;
-  width: 22%;
+  position: absolute;
+  width: 10%;
   font-size: 15px;
-  margin-left: 10px;
+  margin-left: calc(75% + 10px);
   margin-bottom: 10px;
-  position: relative;
-  top: -30px;
+  /*border: 1px solid #121212;*/
 }
 
 .submenu_container {
-  width: 100%;
+  width: calc(100% - 20px);
   height: 30px;
   margin-bottom: 10px;
+  margin-left: 10px;
   border: 1px solid #E3E3E3;
   border-radius: 15px;
 }
@@ -63,17 +70,13 @@
 .submenu_container_noborder {
   width: 100%;
   height: 30px;
+  border: none;
 }
 
-.inner_container {
-  position: absolute;
-  width: calc(100% - 15px);
-  height: 30px;
-}
-
-.keyword_input {
-  width: 100%;
+#keyword_input {
+  width: calc(100% - 20px);
   height :30px;
+  margin-left: 10px;
   box-sizing: border-box;
   border-radius: 15px;
   padding-left: 10px;
@@ -85,8 +88,8 @@
 }
 
 #gender_all_button {
-  float: left;
-  width: 40%;
+  position: absolute;
+  width: calc(40% - 8px);
   font-size: 15px;
   height: 30px;
   border-radius: 15px;
@@ -97,12 +100,11 @@
 }
 
 #gender_M_button {
-  position: relative;
-  left: -10%;
-  width: 40%;
+  position: absolute;
+  width: calc(40% - 8px);
   font-size: 15px;
   height: 30px;
-  /*margin: 0px auto;*/
+  margin-left: calc(30% - 6px); 
   border-radius: 15px;
   background: rgba(0,0,0,0);
   border: none;
@@ -111,12 +113,11 @@
 }
 
 #gender_F_button {
-  position: relative;
-  top: -30px;
-  left: 60%;
-  width: 40%;
+  position: absolute;
+  width: calc(40% - 8px);
   font-size: 15px;
   height: 30px;
+  margin-left: calc(60% - 12px); 
   border-radius: 15px;
   background: rgba(0,0,0,0);
   border: none;
@@ -124,99 +125,114 @@
   /*border: 1px solid #121212;*/
 }
 
-.grade {
-  position: relative;
-  float: left;
-  left: 15px;
-  width: calc(20% - 6px);
+#grade_all_button {
+  position: absolute;
+  width: calc(26% - 5.2px);
   font-size: 13px;
   height: 30px;
-  /*border-radius: 15px;*/
+  border-radius: 15px;
   background: rgba(0,0,0,0);
   border: none;
   outline: none;
   /*border: 1px solid #121212;*/
 }
 
-.grade_gap {
-  float: left;
-  width: 30px;
+#grade_1_button {
+  position: absolute;
+  width: calc(26% - 5.2px);
+  margin-left: calc(18.5% - 3.7px);
+  font-size: 13px;
   height: 30px;
   border-radius: 15px;
+  background: rgba(0,0,0,0);
   border: none;
   outline: none;
-  background: rgba(0,0,0,0);
   /*border: 1px solid #121212;*/
 }
 
-.grade_gap_gap {
-  float: left;
-  width: calc(20% - 36px);
+#grade_2_button {
+  position: absolute;
+  width: calc(26% - 5.2px);
+  margin-left: calc(37% - 7.4px);
+  font-size: 13px;
   height: 30px;
+  border-radius: 15px;
+  background: rgba(0,0,0,0);
   border: none;
   outline: none;
-  background: rgba(0,0,0,0);
   /*border: 1px solid #121212;*/
 }
 
-/*.number_min_input {
-  width: 48%;
+#grade_3_button {
+  position: absolute;
+  width: calc(26% - 5.2px);
+  margin-left: calc(55.5% - 11.1px);
+  font-size: 13px;
+  height: 30px;
+  border-radius: 15px;
+  background: rgba(0,0,0,0);
+  border: none;
+  outline: none;
+  /*border: 1px solid #121212;*/
+}
+
+#grade_4_button {
+  position: absolute;
+  width: calc(26% - 5.2px);
+  margin-left: calc(74% - 14.8px);
+  font-size: 13px;
+  height: 30px;
+  border-radius: 15px;
+  background: rgba(0,0,0,0);
+  border: none;
+  outline: none;
+  /*border: 1px solid #121212;*/
+}
+
+#major_select {
+  position: absolute;
+  width: 70%;
   height :30px;
-  float: left;
+  margin-left: 10px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  background: #EfEfEf;
+  outline: none;
+  border: none;
+}
+
+#number_input {
+  position: absolute;
+  width: calc(25% - 15px);
+  height :30px;
   box-sizing: border-box;
   padding-left: 10px;
   padding-right: 10px;
+  margin-left: calc(75%);
   margin-bottom: 10px;
   border-radius: 15px;
   background: #EfEfEf;
   outline: none;
   border: none;
-  }*/
+}
 
-  .number_max_input {
-    width: 25%;
-    height :30px;
-    float: right;
-    box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    background: #EfEfEf;
-    outline: none;
-    border: none;
-    position: relative;
-    top: -30px;
-  }
-
-  .major_select {
-    float: left;
-    width: 70%;
-    height :30px;
-    box-sizing: border-box;
-    border-radius: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 10px;
-    background: #EfEfEf;
-    outline: none;
-    border: none;
-  }
-
-  #startButton {
-    position: fixed;
-    background: #F44949;
-    color: #FFFFFF;
-    width: calc(100% - 20px);
-    right: 10px;
-    height: 50px;
-    bottom: 10px;
-    z-index: 50px;
-    font-size: 20px;
-    border-radius: 25px;
-    outline: none;
-    border: none;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    transition: .3s
-  }
+#startButton {
+  position: fixed;
+  background: #F44949;
+  color: #FFFFFF;
+  width: calc(100% - 20px);
+  right: 10px;
+  height: 50px;
+  bottom: 10px;
+  z-index: 50px;
+  font-size: 20px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: .3s
+}
 

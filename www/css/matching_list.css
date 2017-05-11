@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .app_bar_container {
   width: 100%;
   height: 30px;
@@ -11,6 +16,7 @@
   height: 30px;
   float: left;
   outline: none;
+  margin-left: 10px;
   /*border: 1px solid #121212;*/
 }
 
@@ -43,76 +49,154 @@
   height: 30px;
   float: right;
   outline: none;
+  margin-right: 10px;
   /*border: 1px solid #121212;*/
 }
 
-/*@media screen and (max-width: 300px) {
-  .title {
-    width: 150px;
-    height: 30px;
-    color: #121212;
-    font-size: 20px;
-    text-align: center;
-    float: left;
-    margin: 0px auto;
-    border: 1px solid #121212;
-  }
-  }*/
+.table_subject_container {
+  width: 100%;
+  height: 30px;
+  background: #F8F8F8;
+  border-bottom: 1px solid #E3E3E3;
+  border-top: 1px solid #E3E3E3;
+}
 
-  .table_subject_container {
-    width: 100%;
-    height: 30px;
-    background: #F8F8F8;
-    border-bottom: 1px solid #E3E3E3;
-    border-top: 1px solid #E3E3E3;
-  }
+.table_subject_keyword {
+  width: 33%;
+  height: 30px;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  /*border: 1px solid #121212;*/
+}
 
-  .table_subject_keyword {
-    width: 33%;
-    height: 30px;
-    float: left;
-    font-size: 15px;
-    text-align: center;
-    line-height: 30px;
-    /*border: 1px solid #121212;*/
-  }
+.table_subject_number {
+  width: 33%;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+  margin: 0px auto;
+  line-height: 30px;
+  /*border: 1px solid #121212;*/
+}
 
-  .table_subject_number {
-    width: 33%;
-    height: 30px;
-    font-size: 15px;
-    text-align: center;
-    margin: 0px auto;
-    line-height: 30px;
-    /*border: 1px solid #121212;*/
-  }
+.table_subject_state {
+  width: 33%;
+  height: 30px;
+  float: right;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  /*border: 1px solid #121212;*/
+}
 
-  .table_subject_state {
-    width: 33%;
-    height: 30px;
-    float: right;
-    font-size: 15px;
-    text-align: center;
-    line-height: 30px;
-    /*border: 1px solid #121212;*/
-  }
+.floating_button {
+  position: fixed;
+  background: #F44949;
+  color: #FFFFFF;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 50px;
+  font-size: 30px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: .3s
+}
 
-  .floating_button {
-    position: fixed;
-    background: #F44949;
-    color: #FFFFFF;
-    width: 50px;
-    height: 50px;
-    bottom: 30px;
-    right: 30px;
-    z-index: 50px;
-    font-size: 30px;
-    border-radius: 100%;
-    outline: none;
-    border: none;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    transition: .3s
-  }
+#navigation {
+  height: 140px;
+  bottom: 30px;
+  border-bottom: 1px solid #E3E3E3; 
+  display: none;
+}
 
+#id_pannel {
+  height: 60px;
+  bottom: 30px;
+  background: #F44949;
+  margin-bottom: 10px;
+}
 
+#user_icon {
+  width: auto; 
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 20px;
+  background: rgba(0,0,0,0);
+  border: 0px;
+  float: left;
+  outline: none;
+  /*border: 1px solid #121212;*/
+}
 
+#name_button {
+  width: auto; 
+  margin-top: 17.5px;
+  margin-left: 10px;
+  height: 25px;
+  font-size: 15px;
+  color: #ffffff;
+  background: rgba(0,0,0,0);
+  border: 0px;
+  float: left;
+  outline: none;
+  /*border: 1px solid #121212;*/
+}
+
+#logout_button {
+  width: auto; 
+  height: 25px;
+  margin-top: 17.5px;
+  margin-right: 10px;
+  background: rgba(0,0,0,0);
+  border: 0px;
+  float: right;
+  outline: none;
+  /*border: 1px solid #121212;*/
+}
+
+#navi_button1 {
+  float: left;
+  height: 60px;
+  width: 60px;
+  margin-left: calc((100% / 3 - 60px) / 2);
+  outline: none;
+  border: none;
+  /*border: 1px solid #121212;*/
+}
+
+#navi_button2 {
+  float: left;
+  height: 60px;
+  width: 60px;
+  margin-left: calc(100% / 3 - 60px);
+  outline: none;
+  border: none;
+  /*border: 1px solid #121212;*/
+}
+
+#navi_button3 {
+  float: left;
+  height: 60px;
+  width: 60px;
+  margin-left: calc(100% / 3 - 60px);
+  outline: none;
+  border: none;
+  /*border: 1px solid #121212;*/
+}
+
+#black {
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  outline: none;
+  border: none;
+  display: none;
+}
